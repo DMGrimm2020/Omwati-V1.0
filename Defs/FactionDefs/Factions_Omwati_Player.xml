@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<FactionDef>
+        <defName>OmwatiPlayerColony</defName>
+        <label>Omwati Arrivals</label>
+        <description>Omwati Outpost Start</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>Omwati</basicMemberKind>
+        <pawnSingular>colonist</pawnSingular>
+        <pawnsPlural>colonists</pawnsPlural>
+        <techLevel>Spacer</techLevel>
+	    <backstoryCategories>
+            <li>Omwati_Backstory</li>
+        </backstoryCategories>
+		<homeIconPath>World/DefaultFactionBase</homeIconPath>
+        <expandingIconTexture>World/Expanding/OmwatiFactionBase</expandingIconTexture>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>TGomwatihair</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+    </FactionDef>
+
+</Defs>
+  

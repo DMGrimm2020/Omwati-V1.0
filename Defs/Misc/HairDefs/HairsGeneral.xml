@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HairDef>
+        <defName>TGHairFeatherF</defName>
+        <label>F Feather Hair</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Omwati/Hairs/TGHairFeatherF</texPath>
+		<hairTags>
+		    <li>TGomwatihair</li>
+		</hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>TGHairFeatherM</defName>
+        <label>M Feather Hair</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Omwati/Hairs/TGHairFeatherM</texPath>
+		<hairTags>
+		    <li>TGomwatihair</li>
+		</hairTags>
+    </HairDef>
+
+
+</Defs>

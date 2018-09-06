@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Omwati_Leather</defName>
+        <label>Omwati Hid</label>
+        <description>Omwati hid</description>
+        <graphicData>
+            <color>(137,159,181)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>4.2</MarketValue>
+            <StuffPower_Armor_Sharp>0.24</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(137,159,181)</color>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>
