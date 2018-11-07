@@ -62,11 +62,6 @@
           <thingDef>ComponentIndustrial</thingDef>
           <count>30</count>
         </li>
-				<li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <thingDef>WakeUp</thingDef>
-          <count>10</count>
-        </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Gun_BoltActionRifle</thingDef>
@@ -77,8 +72,7 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>MeleeWeapon_Knife</thingDef>
-          <stuff>Plasteel</stuff>
+          <thingDef>TGRightVibroknuckler</thingDef>
         </li>
 				<li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
   
-    <ThingDef ParentName="BaseMeleeWeapon">
-        <defName>TGLeftVibroknuckler</defName>
-		<label>left vibroknuckler</label>
-		<description>left vibroknuckler</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponMelee/TGLeftVibroknuckler</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-		</graphicData>
+    <ThingDef ParentName="BaseMeleeWeapon" Name="Vibroknuckler" Abstract="True">
         <techLevel>Spacer</techLevel>
         <costList>
             <Steel>10</Steel>
@@ -20,14 +12,19 @@
 			<Mass>0.5</Mass>
 			<MaxHitPoints>250</MaxHitPoints>
 		</statBases>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>0.25</MeleeDodgeChance>
+		</equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>3</Crafting>
             </skillRequirements>
         </recipeMaker>
         <weaponTags>
+            <li>TGVibroknuckler</li>
             <li>NeolithicMeleeDecent</li>
             <li>MedievalShieldValidSidearm</li>
+            <li>Knife</li>
         </weaponTags>
         <tools>
             <li>
@@ -50,8 +47,19 @@
             </li>
         </comps>
 	</ThingDef>
+  
+    <ThingDef ParentName="Vibroknuckler">
+        <defName>TGLeftVibroknuckler</defName>
+		<label>left vibroknuckler</label>
+		<description>left vibroknuckler</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/TGLeftVibroknuckler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    </ThingDef>
     
-    <ThingDef ParentName="BaseMeleeWeapon">
+    <ThingDef ParentName="Vibroknuckler">
         <defName>TGRightVibroknuckler</defName>
 		<label>right vibroknuckler</label>
 		<description>right vibroknuckler</description>
@@ -60,26 +68,76 @@
 			<graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-        <techLevel>Spacer</techLevel>
+	</ThingDef>
+  
+    <ThingDef ParentName="BaseMeleeWeapon">
+        <defName>TGGaffiStick</defName>
+		<label>gaffi stick</label>
+		<description>gaffi stick</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/TGGaffiStick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
         <costList>
-            <Steel>10</Steel>
+            <WoodLog>5</WoodLog>
+            <Steel>15</Steel>
         </costList>
 		<statBases>
-            <MarketValue>200</MarketValue>
-			<WorkToMake>5500</WorkToMake>
-			<Mass>0.5</Mass>
-			<MaxHitPoints>250</MaxHitPoints>
+            <MarketValue>60</MarketValue>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>5</Mass>
+			<MaxHitPoints>200</MaxHitPoints>
 		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<HuntingStealth>0.1</HuntingStealth>
+			<PlantWorkSpeed>0.05</PlantWorkSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
-            <skillRequirements>
-                <Crafting>3</Crafting>
-            </skillRequirements>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+            </recipeUsers>
         </recipeMaker>
         <weaponTags>
-            <li>NeolithicMeleeDecent</li>
+            <li>TGTGGaffiStick</li>
+            <li>MedievalMeleeAdvanced</li>
             <li>MedievalShieldValidSidearm</li>
         </weaponTags>
         <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>20</power>
+                <armorPenetration>0.50</armorPenetration>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
             <li>
                 <label>edge</label>
                 <capacities>
